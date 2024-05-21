@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetes Prediction</h1>
+        <div class="input-group">
+            <label for="glucose">Glucose Level:</label>
+            <input type="number" id="glucose" placeholder="Enter glucose level">
+        </div>
+        <div class="input-group">
+            <label for="blood-pressure">Blood Pressure:</label>
+            <input type="number" id="blood-pressure" placeholder="Enter blood pressure">
+        </div>
+        <div class="input-group">
+            <label for="bmi">BMI:</label>
+            <input type="number" id="bmi" placeholder="Enter BMI">
+        </div>
+        <div class="input-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter age">
+        </div>
+        <button onclick="predict()">Predict</button>
+        <div>
+            <canvas id="chart"></canvas>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
